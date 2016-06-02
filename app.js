@@ -1,5 +1,19 @@
 var app = angular.module('flapperNews', ['ui.router']);
 
+app.config([
+	'$stateProvider',
+	'$urlRouterProvider',
+	function($stateProvider, $urlRouterProvider) {
+		$stateProvider
+			.state('home', {
+				url: '/home',
+				templateUrl: '/home.html',
+				controller: 'MainCtrl'
+			});
+		$urlRouterProvider.otherwise('home');
+	}
+]);
+
 app.factory('posts', [function(){
 	var o = {
 		posts: [
@@ -17,6 +31,7 @@ app.controller('MainCtrl', [
 	'$scope',
 	'posts',
 	function($scope, posts){
+		console.log("Starting main ctrl");
 		$scope.test = 'Hello world!';
 		$scope.posts = posts.posts;
 		$scope.addPost = function(){
@@ -26,7 +41,7 @@ app.controller('MainCtrl', [
 				link: $scope.link,
 				upvotes: 0
 			});
-			$scope.title='';
+			$scope.title= '';
 			$scope.link = '';
 		};
 		$scope.incrementUpvotes = function(post) {
