@@ -18,3 +18,4 @@ Tutorial: https://thinkster.io/mean-stack-tutorial
 
 2. Added an IncrementUpvotes function to the PostsCtrl controller. Not sure how comments were supposed to be upvoted in the tutorial.
 
+3. In the "Beginning Node" section, rather than just move the index and app.js files to their destination folders, I copied the file and then renamed it.
