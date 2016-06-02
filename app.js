@@ -27,9 +27,15 @@ app.factory('posts', [function() {
 				comments: [
 					{author: 'Jane', body: 'test comment', upvotes: 3}
 				]},
-			{title: 'post 2', upvotes: 2, comments: []},
+			{title: 'post 2', link: "#", upvotes: 2, comments: []},
 			{title: 'post 3', upvotes: 15, comments: []},
-			{title: 'post 4', upvotes: 9, comments: []},
+			{title: 'post 4', 
+				link: "#", 
+				upvotes: 9, 
+				comments: [
+					{author: "Jane", body: 'yay first post!', upvotes: 6},
+					{author: "Jack", body: 'another test', upvotes: 1}
+				]},
 			{title: 'post 5', upvotes: 4, comments: []}
 		]
 	};
