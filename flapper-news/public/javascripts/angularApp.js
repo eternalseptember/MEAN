@@ -20,6 +20,7 @@ app.config([
 ]);
 
 app.factory('posts', [function() {
+/*	
 	var o = {
 		posts: [
 			{title: 'post 1', 
@@ -38,6 +39,10 @@ app.factory('posts', [function() {
 				]},
 			{title: 'post 5', upvotes: 4, comments: []}
 		]
+	};
+*/
+	var o = {
+		posts: []
 	};
 	return o;
 }]);
