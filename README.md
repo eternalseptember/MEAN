@@ -24,3 +24,5 @@ Tutorial: https://thinkster.io/mean-stack-tutorial
 ## Extra Notes:
 
 1. In the "Opening REST Routes section", when running the CURL commands to rest routing, if there's a 404 error, then restart the npm server.
+
+2. There are probably a lot of syntax errors in the "Adding Authentication via Passport" section.
