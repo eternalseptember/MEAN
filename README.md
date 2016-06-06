@@ -1,5 +1,12 @@
 Tutorial: https://thinkster.io/mean-stack-tutorial
 
+## Notes:
+
+1. In the "Opening REST Routes section", when running the CURL commands to rest routing, if there's a 404 error, then restart the npm server.
+
+2. There are probably a lot of syntax errors in the "Adding Authentication via Passport" section.
+
+3. From following the tutorial's instructions, the post author does not show up. http://stackoverflow.com/questions/31920189/post-author-not-displaying-angularjs-http-mongodb-thinkster-mean-stack-tu
 
 ## Modifications:
 
@@ -20,9 +27,3 @@ Tutorial: https://thinkster.io/mean-stack-tutorial
   * It's addressed in the "Wiring Everything Up" section.
 
 3. In the "Beginning Node" section, rather than just move the index and app.js files to their destination folders, I copied the files and then renamed them. Then I replaced the posts array in angularApp.js with what the instructions originally called for.
-
-## Extra Notes:
-
-1. In the "Opening REST Routes section", when running the CURL commands to rest routing, if there's a 404 error, then restart the npm server.
-
-2. There are probably a lot of syntax errors in the "Adding Authentication via Passport" section.
