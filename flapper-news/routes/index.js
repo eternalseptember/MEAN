@@ -1,9 +1,10 @@
 // define this before express or else errors 
 var mongoose = require('mongoose');
 var passport = require('passport');
-var router = express.Router();
 var express = require('express');
 var jwt = require('express-jwt');
+
+var router = express.Router();
 
 var Post = mongoose.model('Post');
 var Comment = mongoose.model('Comment');
@@ -26,7 +27,7 @@ router.get('/posts', function(req, res, next) {
 router.post('/posts', auth, function(req, res, next) {
 	var post = new Post(req.body);
 	post.author = req.payload.username;
-	post.save(function(err,post) {
+	post.save(function(err, post) {
 		if (err) {return next(err);}
 		res.json(post);
 	});

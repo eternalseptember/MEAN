@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 var User = mongoose.model('User');
 
 passport.use(new LocalStrategy(
-	function(username, passport, done) {
+	function(username, password, done) {
 		User.findOne({username: username}, function(err, user) {
 			if (err) {return done(err);}
 			if(!user) {
